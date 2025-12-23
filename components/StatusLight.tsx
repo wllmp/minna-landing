@@ -1,7 +1,5 @@
 "use client";
 
-import { useState, useEffect } from "react";
-
 interface StatusLightProps {
   status: "indexing" | "synced";
   size?: "sm" | "md" | "lg";
@@ -9,14 +7,6 @@ interface StatusLightProps {
 }
 
 export function StatusLight({ status, size = "md", showLabel = false }: StatusLightProps) {
-  const [isAnimating, setIsAnimating] = useState(false);
-
-  useEffect(() => {
-    if (status === "indexing") {
-      setIsAnimating(true);
-    }
-  }, [status]);
-
   const sizeClasses = {
     sm: "w-2 h-2",
     md: "w-3 h-3",
