@@ -79,8 +79,8 @@ export default function Home() {
                   Long-term
                 </h1>
                 <h1 
-                  className="text-5xl sm:text-7xl md:text-8xl lg:text-[9rem] font-serif italic gradient-text-cool my-2"
-                  style={{ lineHeight: '1.1' }}
+                  className="text-6xl sm:text-7xl md:text-8xl lg:text-[9rem] font-serif italic gradient-text-cool"
+                  style={{ lineHeight: '1.2', paddingBottom: '0.1em' }}
                 >
                   memory
                 </h1>
