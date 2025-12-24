@@ -394,7 +394,20 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-6 lg:gap-8">
             {/* Minna Core - Free */}
             <div className="relative">
-              <div className="relative p-6 sm:p-8 rounded-3xl bg-white/80 backdrop-blur-xl border border-minna-sakura/30 shadow-lg h-full flex flex-col">
+              <div 
+                className="absolute inset-0 rounded-3xl rotate-1"
+                style={{ background: 'linear-gradient(135deg, rgba(129, 236, 236, 0.5), rgba(162, 155, 254, 0.5))' }}
+              />
+              <div className="relative p-6 sm:p-8 rounded-3xl bg-white/90 backdrop-blur-xl border border-white/50 shadow-2xl -rotate-1 h-full flex flex-col">
+                <div className="absolute -top-3 left-1/2 -translate-x-1/2">
+                  <span 
+                    className="px-4 py-1 text-xs font-bold uppercase tracking-wider rounded-full text-white whitespace-nowrap"
+                    style={{ background: 'linear-gradient(135deg, #81ecec, #a29bfe)' }}
+                  >
+                    Get Started Free
+                  </span>
+                </div>
+                
                 <div className="mb-6">
                   <p className="text-xs font-mono text-minna-muted uppercase tracking-wider mb-2">The Builder</p>
                   <h3 className="text-2xl font-display font-bold text-minna-ink mb-1">Minna Core</h3>
@@ -446,20 +459,7 @@ export default function Home() {
 
             {/* Minna Pro - $9/mo */}
             <div className="relative">
-              <div 
-                className="absolute inset-0 rounded-3xl rotate-1"
-                style={{ background: 'linear-gradient(135deg, rgba(248, 165, 194, 0.5), rgba(247, 143, 179, 0.5))' }}
-              />
-              <div className="relative p-6 sm:p-8 rounded-3xl bg-white/90 backdrop-blur-xl border border-white/50 shadow-2xl -rotate-1 h-full flex flex-col">
-                <div className="absolute -top-3 left-1/2 -translate-x-1/2">
-                  <span 
-                    className="px-4 py-1 text-xs font-bold uppercase tracking-wider rounded-full text-white"
-                    style={{ background: 'linear-gradient(135deg, #f78fb3, #f3a683)' }}
-                  >
-                    Popular
-                  </span>
-                </div>
-                
+              <div className="relative p-6 sm:p-8 rounded-3xl bg-white/80 backdrop-blur-xl border border-minna-sakura/30 shadow-lg h-full flex flex-col">
                 <div className="mb-6">
                   <p className="text-xs font-mono text-minna-muted uppercase tracking-wider mb-2">The Founder</p>
                   <h3 className="text-2xl font-display font-bold text-minna-ink mb-1">Minna Pro</h3>
