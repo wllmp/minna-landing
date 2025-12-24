@@ -25,21 +25,21 @@ export default function Home() {
 
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/60 backdrop-blur-xl border-b border-minna-sakura/20">
-        <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3 sm:py-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <div className="w-3 h-3 rounded-full status-pulse" style={{ background: 'linear-gradient(135deg, #f78fb3, #f3a683)' }} />
-            <span className="text-2xl font-display font-bold text-minna-ink">minna</span>
+            <span className="text-xl sm:text-2xl font-display font-bold text-minna-ink">minna</span>
           </div>
-          <div className="flex items-center gap-8">
-            <a href="#how-it-works" className="text-sm font-medium text-minna-slate hover:text-minna-ink transition-colors">
+          <div className="flex items-center gap-4 sm:gap-8">
+            <a href="#how-it-works" className="hidden sm:block text-sm font-medium text-minna-slate hover:text-minna-ink transition-colors">
               How it works
             </a>
-            <a href="#pricing" className="text-sm font-medium text-minna-slate hover:text-minna-ink transition-colors">
+            <a href="#pricing" className="hidden sm:block text-sm font-medium text-minna-slate hover:text-minna-ink transition-colors">
               Pricing
             </a>
             <a 
               href="#waitlist" 
-              className="px-5 py-2.5 text-sm font-semibold text-white rounded-full transition-all hover:scale-105"
+              className="px-4 py-2 sm:px-5 sm:py-2.5 text-sm font-semibold text-white rounded-full transition-all hover:scale-105"
               style={{ 
                 background: "linear-gradient(135deg, #f8a5c2 0%, #f78fb3 50%, #f3a683 100%)",
                 boxShadow: "0 4px 16px rgba(247, 143, 179, 0.3)"
@@ -52,7 +52,7 @@ export default function Home() {
       </nav>
 
       {/* Hero Section - Creative Layout */}
-      <section className="relative min-h-screen flex items-center px-6 pt-20">
+      <section className="relative min-h-screen flex items-center px-4 sm:px-6 pt-24 sm:pt-20">
         <div className="absolute inset-0 dot-pattern opacity-40" />
         
         <div className="relative max-w-7xl mx-auto w-full">
@@ -75,18 +75,18 @@ export default function Home() {
                 className="opacity-0 animate-fade-in-up delay-100"
                 style={{ animationFillMode: "forwards" }}
               >
-                <h1 className="text-5xl md:text-6xl lg:text-7xl font-display font-bold text-minna-ink leading-none">
+                <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-bold text-minna-ink leading-none">
                   Long-term
                 </h1>
                 <h1 
-                  className="text-7xl md:text-8xl lg:text-[9rem] font-serif italic gradient-text-cool my-2"
+                  className="text-5xl sm:text-7xl md:text-8xl lg:text-[9rem] font-serif italic gradient-text-cool my-2"
                   style={{ lineHeight: '1.1' }}
                 >
                   memory
                 </h1>
-                <div className="flex items-baseline gap-4">
-                  <span className="text-xl md:text-2xl font-body text-minna-slate">for</span>
-                  <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-minna-ink">
+                <div className="flex items-baseline gap-2 sm:gap-4">
+                  <span className="text-lg sm:text-xl md:text-2xl font-body text-minna-slate">for</span>
+                  <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-display font-bold text-minna-ink">
                     AI agents
                   </h1>
                 </div>
@@ -199,12 +199,12 @@ export default function Home() {
         
         <div className="relative max-w-7xl mx-auto">
           {/* Section header */}
-          <div className="mb-20 max-w-4xl">
+          <div className="mb-20 max-w-4xl px-4 sm:px-0">
             <p className="text-sm font-mono text-minna-muted uppercase tracking-widest mb-4">The Problem</p>
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-minna-ink leading-tight mb-6">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-display font-bold text-minna-ink leading-tight mb-6">
               AI has an<br />
               <span 
-                className="text-5xl md:text-6xl lg:text-8xl font-serif italic gradient-text-cool inline-block my-3"
+                className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-serif italic gradient-text-cool inline-block my-3"
                 style={{ lineHeight: '1.1' }}
               >
                 amnesia
@@ -450,12 +450,12 @@ export default function Home() {
       <section id="waitlist" className="relative py-32 px-6">
         <div className="absolute inset-0 section-gradient-1" />
         
-        <div className="relative max-w-5xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-minna-ink mb-2">
+        <div className="relative max-w-5xl mx-auto text-center px-4 sm:px-0">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-display font-bold text-minna-ink mb-2">
             Remember
           </h2>
           <h2 
-            className="text-6xl md:text-7xl lg:text-[9rem] font-serif italic gradient-text-cool mb-8"
+            className="text-4xl sm:text-6xl md:text-7xl lg:text-[9rem] font-serif italic gradient-text-cool mb-8"
             style={{ lineHeight: '1.15' }}
           >
             everything
