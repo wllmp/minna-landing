@@ -280,13 +280,13 @@ export default function Home() {
             {[
               { 
                 title: "Delta Sync", 
-                desc: "Only fetches new data. Minimal CPU & battery.",
+                desc: "Always up to date. Minimal CPU & battery drain.",
                 icon: "⚡",
                 color: "#f8a5c2"
               },
               { 
                 title: "SQLCipher", 
-                desc: "Encrypted at rest. Key from macOS Keychain.",
+                desc: "Encrypted at rest to keep your context safe.",
                 icon: "🔐",
                 color: "#a29bfe"
               },
@@ -378,67 +378,185 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Pricing - Clean but with character */}
-      <section id="pricing" className="relative py-32 px-6">
+      {/* Pricing - Three tiers */}
+      <section id="pricing" className="relative py-32 px-4 sm:px-6">
         <div className="absolute inset-0 section-gradient-2" />
         
-        <div className="relative max-w-4xl mx-auto text-center">
+        <div className="relative max-w-6xl mx-auto text-center">
           <p className="text-sm font-mono text-minna-muted uppercase tracking-widest mb-4">Pricing</p>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-minna-ink mb-6">
-            <span className="font-serif italic gradient-text">Free</span> forever
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-display font-bold text-minna-ink mb-6">
+            Start <span className="font-serif italic gradient-text">free</span>, scale as you grow
           </h2>
-          <p className="text-xl text-minna-slate mb-16 max-w-xl mx-auto">
-            Bring your own API key. No limits. No catch.
+          <p className="text-lg sm:text-xl text-minna-slate mb-16 max-w-xl mx-auto">
+            From solo builders to teams. Pick what fits.
           </p>
 
-          <div className="max-w-lg mx-auto">
+          <div className="grid md:grid-cols-3 gap-6 lg:gap-8">
+            {/* Minna Core - Free */}
             <div className="relative">
-              <div 
-                className="absolute inset-0 rounded-3xl rotate-2"
-                style={{ background: 'linear-gradient(135deg, rgba(248, 165, 194, 0.5), rgba(162, 155, 254, 0.5))' }}
-              />
-              <div className="relative p-10 rounded-3xl bg-white/90 backdrop-blur-xl border border-white/50 shadow-2xl -rotate-1">
-                <div className="flex items-center justify-between mb-8">
-                  <h3 className="text-3xl font-display font-bold text-minna-ink">Minna Core</h3>
-                  <div className="text-right">
+              <div className="relative p-6 sm:p-8 rounded-3xl bg-white/80 backdrop-blur-xl border border-minna-sakura/30 shadow-lg h-full flex flex-col">
+                <div className="mb-6">
+                  <p className="text-xs font-mono text-minna-muted uppercase tracking-wider mb-2">The Builder</p>
+                  <h3 className="text-2xl font-display font-bold text-minna-ink mb-1">Minna Core</h3>
+                  <div className="flex items-baseline gap-1">
                     <span 
-                      className="text-6xl font-display font-bold"
-                      style={{ background: 'linear-gradient(135deg, #f78fb3, #f3a683)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}
+                      className="text-4xl sm:text-5xl font-display font-bold"
+                      style={{ background: 'linear-gradient(135deg, #81ecec, #a29bfe)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}
                     >
-                      $0
+                      Free
                     </span>
                   </div>
                 </div>
 
-                <ul className="space-y-4 mb-10 text-left">
+                <ul className="space-y-3 mb-8 text-left flex-grow">
                   {[
                     "Unlimited local indexing",
-                    "BYOK (Bring Your Own Key)",
-                    "Slack, GitHub, Linear, Gmail",
-                    "MCP for Claude, Cursor, ChatGPT",
-                    "SQLCipher encryption",
+                    { text: "BYOK", detail: "Bring Your Own API Key" },
+                    "Standard connectors (Slack, GitHub, Linear)",
                   ].map((feature, i) => (
-                    <li key={i} className="flex items-center gap-4">
+                    <li key={i} className="flex items-start gap-3">
                       <span 
-                        className="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 text-sm"
+                        className="w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0 text-xs mt-0.5"
                         style={{ background: 'linear-gradient(135deg, #81ecec40, #a29bfe40)' }}
                       >
                         ✓
                       </span>
-                      <span className="text-minna-ink text-lg">{feature}</span>
+                      <span className="text-minna-ink text-sm sm:text-base">
+                        {typeof feature === 'string' ? feature : (
+                          <><strong>{feature.text}:</strong> {feature.detail}</>
+                        )}
+                      </span>
                     </li>
                   ))}
                 </ul>
 
                 <a 
                   href="#waitlist"
-                  className="block w-full py-5 text-center text-lg font-semibold text-white rounded-full transition-all hover:scale-[1.02]"
+                  className="block w-full py-4 text-center text-base font-semibold rounded-full transition-all hover:scale-[1.02]"
                   style={{ 
-                    background: "linear-gradient(135deg, #f8a5c2 0%, #f78fb3 25%, #e77f8c 50%, #f3a683 75%, #f7d794 100%)",
-                    boxShadow: "0 8px 32px rgba(247, 143, 179, 0.3)"
+                    background: 'linear-gradient(135deg, #81ecec, #a29bfe)',
+                    color: '#1a1b3a',
+                    boxShadow: "0 4px 16px rgba(129, 236, 236, 0.3)"
                   }}
                 >
-                  Join the Waitlist
+                  Get Started
+                </a>
+              </div>
+            </div>
+
+            {/* Minna Pro - $9/mo */}
+            <div className="relative">
+              <div 
+                className="absolute inset-0 rounded-3xl rotate-1"
+                style={{ background: 'linear-gradient(135deg, rgba(248, 165, 194, 0.5), rgba(247, 143, 179, 0.5))' }}
+              />
+              <div className="relative p-6 sm:p-8 rounded-3xl bg-white/90 backdrop-blur-xl border border-white/50 shadow-2xl -rotate-1 h-full flex flex-col">
+                <div className="absolute -top-3 left-1/2 -translate-x-1/2">
+                  <span 
+                    className="px-4 py-1 text-xs font-bold uppercase tracking-wider rounded-full text-white"
+                    style={{ background: 'linear-gradient(135deg, #f78fb3, #f3a683)' }}
+                  >
+                    Popular
+                  </span>
+                </div>
+                
+                <div className="mb-6">
+                  <p className="text-xs font-mono text-minna-muted uppercase tracking-wider mb-2">The Founder</p>
+                  <h3 className="text-2xl font-display font-bold text-minna-ink mb-1">Minna Pro</h3>
+                  <div className="flex items-baseline gap-1">
+                    <span 
+                      className="text-4xl sm:text-5xl font-display font-bold"
+                      style={{ background: 'linear-gradient(135deg, #f78fb3, #f3a683)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}
+                    >
+                      $9
+                    </span>
+                    <span className="text-minna-slate text-sm">/ month</span>
+                  </div>
+                </div>
+
+                <ul className="space-y-3 mb-8 text-left flex-grow">
+                  {[
+                    { text: "Zero Config", detail: "Managed embeddings, no API keys required" },
+                    { text: "Cloud Sync", detail: "Encrypted sync between devices" },
+                    "Priority support",
+                  ].map((feature, i) => (
+                    <li key={i} className="flex items-start gap-3">
+                      <span 
+                        className="w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0 text-xs mt-0.5"
+                        style={{ background: 'linear-gradient(135deg, #f8a5c240, #f78fb340)' }}
+                      >
+                        ✓
+                      </span>
+                      <span className="text-minna-ink text-sm sm:text-base">
+                        {typeof feature === 'string' ? feature : (
+                          <><strong>{feature.text}:</strong> {feature.detail}</>
+                        )}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+
+                <a 
+                  href="#waitlist"
+                  className="block w-full py-4 text-center text-base font-semibold text-white rounded-full transition-all hover:scale-[1.02]"
+                  style={{ 
+                    background: "linear-gradient(135deg, #f8a5c2 0%, #f78fb3 50%, #f3a683 100%)",
+                    boxShadow: "0 8px 32px rgba(247, 143, 179, 0.35)"
+                  }}
+                >
+                  Join Waitlist
+                </a>
+              </div>
+            </div>
+
+            {/* Minna Team - $15/user */}
+            <div className="relative">
+              <div className="relative p-6 sm:p-8 rounded-3xl bg-white/80 backdrop-blur-xl border border-minna-lavender/30 shadow-lg h-full flex flex-col">
+                <div className="mb-6">
+                  <p className="text-xs font-mono text-minna-muted uppercase tracking-wider mb-2">The Organization</p>
+                  <h3 className="text-2xl font-display font-bold text-minna-ink mb-1">Minna Team</h3>
+                  <div className="flex items-baseline gap-1">
+                    <span 
+                      className="text-4xl sm:text-5xl font-display font-bold"
+                      style={{ background: 'linear-gradient(135deg, #a29bfe, #81ecec)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}
+                    >
+                      $15
+                    </span>
+                    <span className="text-minna-slate text-sm">/ user</span>
+                  </div>
+                </div>
+
+                <ul className="space-y-3 mb-8 text-left flex-grow">
+                  {[
+                    { text: "Context Packs", detail: "Export/import curated knowledge bundles" },
+                    { text: "Admin Controls", detail: "MDM support & data retention policies" },
+                  ].map((feature, i) => (
+                    <li key={i} className="flex items-start gap-3">
+                      <span 
+                        className="w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0 text-xs mt-0.5"
+                        style={{ background: 'linear-gradient(135deg, #a29bfe40, #81ecec40)' }}
+                      >
+                        ✓
+                      </span>
+                      <span className="text-minna-ink text-sm sm:text-base">
+                        {typeof feature === 'string' ? feature : (
+                          <><strong>{feature.text}:</strong> {feature.detail}</>
+                        )}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+
+                <a 
+                  href="#waitlist"
+                  className="block w-full py-4 text-center text-base font-semibold rounded-full transition-all hover:scale-[1.02]"
+                  style={{ 
+                    background: 'linear-gradient(135deg, #a29bfe, #81ecec)',
+                    color: '#1a1b3a',
+                    boxShadow: "0 4px 16px rgba(162, 155, 254, 0.3)"
+                  }}
+                >
+                  Contact Sales
                 </a>
               </div>
             </div>
