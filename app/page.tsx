@@ -477,7 +477,7 @@ export default function Home() {
                 <ul className="space-y-3 mb-8 text-left flex-grow">
                   {[
                     { text: "Zero Config", detail: "Managed embeddings, no API keys required" },
-                    { text: "Cloud Sync", detail: "Encrypted sync between devices" },
+                    { text: "Cloud Sync", detail: "Your context, on any device" },
                     "Priority support",
                   ].map((feature, i) => (
                     <li key={i} className="flex items-start gap-3">
