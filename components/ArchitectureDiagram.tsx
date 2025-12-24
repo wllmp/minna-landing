@@ -86,7 +86,7 @@ export function ArchitectureDiagram() {
 
         {/* Destinations Row */}
         <div className="flex items-center justify-center gap-4 md:gap-8 mt-2">
-          {(["cursor", "claude", "raycast"] as const).map((dest, i) => (
+          {(["cursor", "claude", "chatgpt"] as const).map((dest, i) => (
             <div
               key={dest}
               className="flex flex-col items-center gap-3 opacity-0 animate-fade-in-up"

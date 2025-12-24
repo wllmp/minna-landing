@@ -292,7 +292,7 @@ export default function Home() {
               },
               { 
                 title: "MCP Native", 
-                desc: "Instant compatibility with Claude, Cursor, Raycast.",
+                desc: "Instant compatibility with Claude, Cursor, ChatGPT.",
                 icon: "🔌",
                 color: "#81ecec"
               },
@@ -415,7 +415,7 @@ export default function Home() {
                     "Unlimited local indexing",
                     "BYOK (Bring Your Own Key)",
                     "Slack, GitHub, Linear, Gmail",
-                    "MCP for Claude, Cursor, Raycast",
+                    "MCP for Claude, Cursor, ChatGPT",
                     "SQLCipher encryption",
                   ].map((feature, i) => (
                     <li key={i} className="flex items-center gap-4">
