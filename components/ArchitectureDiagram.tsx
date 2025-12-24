@@ -53,7 +53,7 @@ export function ArchitectureDiagram() {
                 style={{ background: 'linear-gradient(135deg, #f78fb3, #f3a683)' }}
               />
               <div>
-                <img src="/logo.svg" alt="Minna" className="h-6 mb-1" />
+                <img src="/logo.svg" alt="Minna" className="w-20 h-auto mb-1" />
                 <p className="text-xs font-mono text-minna-muted">sqlite-vec • encrypted</p>
               </div>
             </div>

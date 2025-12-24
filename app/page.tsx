@@ -28,7 +28,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3 sm:py-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <div className="w-3 h-3 rounded-full status-pulse" style={{ background: 'linear-gradient(135deg, #f78fb3, #f3a683)' }} />
-            <img src="/logo.svg" alt="Minna" className="h-5 sm:h-6" />
+            <img src="/logo.svg" alt="Minna" className="w-20 sm:w-24 h-auto" />
           </div>
           <div className="flex items-center gap-4 sm:gap-8">
             <a href="#how-it-works" className="hidden sm:block text-sm font-medium text-minna-slate hover:text-minna-ink transition-colors">
@@ -156,7 +156,7 @@ export default function Home() {
                     <div className="flex items-center justify-between mb-6">
                       <div className="flex items-center gap-3">
                         <div className="w-3 h-3 rounded-full status-pulse" style={{ background: 'linear-gradient(135deg, #f78fb3, #f3a683)' }} />
-                        <img src="/logo.svg" alt="Minna" className="h-5" />
+                        <img src="/logo.svg" alt="Minna" className="w-20 h-auto" />
                       </div>
                       <span 
                         className="text-xs font-mono px-3 py-1 rounded-full"
@@ -625,7 +625,7 @@ export default function Home() {
               className="w-2.5 h-2.5 rounded-full"
               style={{ background: 'linear-gradient(135deg, #81ecec, #a29bfe)' }}
             />
-            <img src="/logo.svg" alt="Minna" className="h-4" />
+            <img src="/logo.svg" alt="Minna" className="w-16 h-auto" />
             <span className="text-minna-muted">© 2025</span>
           </div>
           <div className="flex items-center gap-8">
