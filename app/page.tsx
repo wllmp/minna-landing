@@ -26,9 +26,8 @@ export default function Home() {
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/60 backdrop-blur-xl border-b border-minna-sakura/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3 sm:py-4 flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <div className="w-3 h-3 rounded-full status-pulse" style={{ background: 'linear-gradient(135deg, #f78fb3, #f3a683)' }} />
-            <img src="/logo.svg" alt="Minna" className="w-20 sm:w-24 h-auto" />
+          <div className="flex items-center">
+            <img src="/logo.png" alt="Minna" className="h-8 sm:h-9 w-auto" />
           </div>
           <div className="flex items-center gap-4 sm:gap-8">
             <a href="#how-it-works" className="hidden sm:block text-sm font-medium text-minna-slate hover:text-minna-ink transition-colors">
@@ -155,8 +154,8 @@ export default function Home() {
                   <div className="bg-gradient-to-br from-minna-paper to-white rounded-2xl p-6 border border-minna-sakura/10">
                     <div className="flex items-center justify-between mb-6">
                       <div className="flex items-center gap-3">
-                        <div className="w-3 h-3 rounded-full status-pulse" style={{ background: 'linear-gradient(135deg, #f78fb3, #f3a683)' }} />
-                        <img src="/logo.svg" alt="Minna" className="w-20 h-auto" />
+                        <img src="/icon.png" alt="Minna" className="w-8 h-8 rounded-lg" />
+                        <span className="font-display font-bold text-xl text-minna-ink">minna</span>
                       </div>
                       <span 
                         className="text-xs font-mono px-3 py-1 rounded-full"
@@ -621,11 +620,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-white/40 backdrop-blur-sm" />
         <div className="relative max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-3">
-            <div 
-              className="w-2.5 h-2.5 rounded-full"
-              style={{ background: 'linear-gradient(135deg, #81ecec, #a29bfe)' }}
-            />
-            <img src="/logo.svg" alt="Minna" className="w-16 h-auto" />
+            <img src="/logo.png" alt="Minna" className="h-6 w-auto" />
             <span className="text-minna-muted">© 2025</span>
           </div>
           <div className="flex items-center gap-8">

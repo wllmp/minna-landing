@@ -47,13 +47,10 @@ export function ArchitectureDiagram() {
             style={{ background: 'linear-gradient(135deg, rgba(248, 165, 194, 0.4), rgba(162, 155, 254, 0.4))' }}
           />
           <div className="relative px-10 py-7 rounded-2xl bg-white/90 backdrop-blur-xl border border-white/50 shadow-2xl">
-            <div className="flex items-center gap-5">
-              <div 
-                className="w-4 h-4 rounded-full status-pulse"
-                style={{ background: 'linear-gradient(135deg, #f78fb3, #f3a683)' }}
-              />
+            <div className="flex items-center gap-4">
+              <img src="/icon.png" alt="Minna" className="w-10 h-10 rounded-xl" />
               <div>
-                <img src="/logo.svg" alt="Minna" className="w-20 h-auto mb-1" />
+                <h3 className="text-xl font-display font-bold text-minna-ink">minna</h3>
                 <p className="text-xs font-mono text-minna-muted">sqlite-vec • encrypted</p>
               </div>
             </div>
