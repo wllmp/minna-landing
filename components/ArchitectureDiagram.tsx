@@ -48,7 +48,7 @@ export function ArchitectureDiagram() {
           />
           <div className="relative px-10 py-7 rounded-2xl bg-white/90 backdrop-blur-xl border border-white/50 shadow-2xl">
             <div className="flex items-center gap-4">
-              <img src="/icon.png" alt="Minna" className="w-10 h-10 rounded-xl" />
+              <img src="/icon.png" alt="Minna" className="rounded-xl" style={{ width: '56px', height: '56px' }} />
               <div>
                 <h3 className="text-xl font-display font-bold text-minna-ink">minna</h3>
                 <p className="text-xs font-mono text-minna-muted">sqlite-vec • encrypted</p>
