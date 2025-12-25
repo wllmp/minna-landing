@@ -258,7 +258,7 @@ export default function Home() {
       </section>
 
       {/* How It Works - Kept more structured */}
-      <section id="how-it-works" className="relative py-32 px-6">
+      <section id="how-it-works" className="relative py-32 px-6 scroll-mt-24">
         <div className="absolute inset-0 section-gradient-2" />
         
         <div className="relative max-w-6xl mx-auto">
@@ -378,7 +378,7 @@ export default function Home() {
       </section>
 
       {/* Pricing - Three tiers */}
-      <section id="pricing" className="relative py-32 px-4 sm:px-6">
+      <section id="pricing" className="relative py-32 px-4 sm:px-6 scroll-mt-24">
         <div className="absolute inset-0 section-gradient-2" />
         
         <div className="relative max-w-6xl mx-auto text-center">
@@ -564,7 +564,7 @@ export default function Home() {
       </section>
 
       {/* Waitlist - Big and bold */}
-      <section id="waitlist" className="relative py-32 px-6">
+      <section id="waitlist" className="relative py-32 px-6 scroll-mt-24">
         <div className="absolute inset-0 section-gradient-1" />
         
         <div className="relative max-w-5xl mx-auto text-center px-4 sm:px-0">

@@ -47,7 +47,7 @@ export function ArchitectureDiagram() {
             style={{ background: 'linear-gradient(135deg, rgba(248, 165, 194, 0.4), rgba(162, 155, 254, 0.4))' }}
           />
           <div className="relative px-10 py-7 rounded-2xl bg-white/90 backdrop-blur-xl border border-white/50 shadow-2xl">
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-3">
               <img src="/icon.png" alt="Minna" className="rounded-xl" style={{ width: '56px', height: '56px' }} />
               <div>
                 <h3 className="text-xl font-display font-bold text-minna-ink">minna</h3>
