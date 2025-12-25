@@ -27,7 +27,7 @@ export default function Home() {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/60 backdrop-blur-xl border-b border-minna-sakura/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3 sm:py-4 flex items-center justify-between">
           <div className="flex items-center">
-            <img src="/logo.png" alt="Minna" className="h-10 w-auto" style={{ height: '42px' }} />
+            <img src="/logo.png" alt="Minna" style={{ width: '140px', height: 'auto' }} />
           </div>
           <div className="flex items-center gap-4 sm:gap-8">
             <a href="#how-it-works" className="hidden sm:block text-sm font-medium text-minna-slate hover:text-minna-ink transition-colors">
@@ -620,7 +620,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-white/40 backdrop-blur-sm" />
         <div className="relative max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-3">
-            <img src="/logo.png" alt="Minna" className="h-8 w-auto" style={{ height: '32px' }} />
+            <img src="/logo.png" alt="Minna" style={{ width: '100px', height: 'auto' }} />
             <span className="text-minna-muted">© 2025</span>
           </div>
           <div className="flex items-center gap-8">
